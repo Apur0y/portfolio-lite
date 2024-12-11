@@ -11,13 +11,13 @@ const Banner = () => {
       {/* section-two */}
       <section>
 
-        <h1 className="text-2xl font-semibold lg:text-8xl">I am <br />Apu Roy</h1>
+        <h1 className="text-2xl font-semibold lg:text-8xl">I am <br />Apu Roy <br /> Full-Stack Developer</h1>
 
       </section>
 
       {/* section-three */}
       <section>
-<h1>sdfg</h1>
+
       </section>
     </div>
   );
