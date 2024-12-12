@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 
+
 const Projects = () => {
     const slides = [
-        'https://via.placeholder.com/1200x800?text=Slide+1',
-        'https://via.placeholder.com/1200x800?text=Slide+2',
-        'https://via.placeholder.com/1200x800?text=Slide+3',
+        '../../public/m1.JPG',
+        '../../public/m2.JPG',
+        '../../public/m3.JPG',
+        '../../public/m4.JPG',
+       
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -19,7 +22,7 @@ const Projects = () => {
 
     return (
         <div
-            className="hero min-h-screen"
+            className="hero max-w-screen-2xl "
             style={{
                 backgroundImage: `url(${slides[currentIndex]})`,
                 backgroundSize: 'cover',
@@ -27,7 +30,7 @@ const Projects = () => {
                 transition: 'background-image 1s ease-in-out', // Smooth transition effect
             }}
         >
-            <div className="hero-overlay bg-opacity-60"></div>
+            <div className="hero-overlay bg-opacity-0"></div>
             <div className="hero-content text-neutral-content text-center">
                 <div className="max-w-md">
                     <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
