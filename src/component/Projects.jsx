@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const Projects = () => {
     const slides = [
-        '../../public/m1.JPG',
+        'https://prnt.sc/YDVWcawc4-zYhttps://prnt.sc/YDVWcawc4-zY',
         '../../public/m2.JPG',
         '../../public/m3.JPG',
         '../../public/m4.JPG',
@@ -22,14 +22,15 @@ const Projects = () => {
 
     return (
         <div
-            className="hero max-w-screen-2xl "
+            className="hero max-w-screen "
             style={{
-                backgroundImage: `url(${slides[currentIndex]})`,
+               
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 transition: 'background-image 1s ease-in-out', // Smooth transition effect
             }}
         >
+           <img src={slides[currentIndex]} alt="" />
             <div className="hero-overlay bg-opacity-0"></div>
             <div className="hero-content text-neutral-content text-center">
                 <div className="max-w-md">
