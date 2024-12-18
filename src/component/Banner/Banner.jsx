@@ -29,7 +29,7 @@ const Banner = () => {
           I am <br />
           <span className="text-8xl text-purple-400">Apu Roy</span>
           <br />
-          <span className="text-lg lg:text-4xl ">Full-Stack Developer</span>
+          <span className="text-lg lg:text-4xl ">MERN-Stack Developer</span>
         </h1>
       </section>
 
