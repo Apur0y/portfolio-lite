@@ -5,10 +5,11 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Projects = () => {
 const slides = [
-    'https://prnt.sc/YDVWcawc4-zYhttps://prnt.sc/YDVWcawc4-zY',
-    '../../public/m2.JPG',
-    '../../public/m3.JPG',
-    '../../public/m4.JPG',
+    '../../public/m5.png',
+    '../../public/m6.png',
+    '../../public/m7.png',
+    '../../public/m8.png',
+    
    
 ];
 
@@ -23,8 +24,10 @@ const slides = [
   }, [slides.length]);
 
   return (
-    <div
-      className="relative mx-auto w-10/12 h-[400px] rounded-lg shadow-lg overflow-hidden"
+    <div>
+        <h1 className="text-2xl text-center my-7 border-b-2 pb-6 md:text-5xl font-semibold">Top Projects</h1>
+  <div
+      className="relative border-2  mx-auto w-10/12 h-[600px] rounded-lg shadow-lg overflow-hidden"
       style={{
         backgroundImage: `url(${slides[currentIndex]})`,
         backgroundSize: "cover",
@@ -32,7 +35,7 @@ const slides = [
         transition: "background-image 1s ease-in-out",
       }}
     >
-      {/* Buttons */}
+     
       <div className="absolute top-4 right-4 flex space-x-4">
         <button className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-md shadow hover:bg-purple-700 transition-all">
           Live Preview <FaArrowRight className="ml-2" />
@@ -50,6 +53,8 @@ const slides = [
         </p>
       </div>
     </div>
+    </div>
+  
   );
 };
 
