@@ -42,8 +42,9 @@ const Projects = () => {
         {/* Buttons */}
         <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <div className="flex flex-col space-x-4">
-        <div>
-        <h1 className="text-4xl font-bold mb-2">Project Title</h1>
+        <div className="text-white text-center my-5">
+
+        <h1 className="text-4xl font-bold mb-2">Game Review</h1>
           <p className="text-sm">
             This is a brief description of the project. Click "Details" to learn
             more!
