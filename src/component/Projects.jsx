@@ -46,8 +46,7 @@ const Projects = () => {
 
         <h1 className="text-4xl font-bold mb-2">Game Review</h1>
           <p className="text-sm">
-            This is a brief description of the project. Click "Details" to learn
-            more!
+           You can checkout different types of games. Can see the review of others and option for add review.
           </p>
         </div>
             <div className="flex flex-row gap-4">
