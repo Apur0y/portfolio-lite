@@ -11,8 +11,8 @@ const Education = () => {
         "Focused on software development, data structures, and algorithms. Graduated with honors.",
     },
     {
-      degree: "Higher Secondary Education",
-      institution: "ABC High School",
+      degree: "Higher Secondary Certificate",
+      institution: "BAF Shahee College, Jashore.",
       year: "2016 - 2018",
       description:
         "Majored in Science, with a focus on Physics, Chemistry, and Mathematics.",
