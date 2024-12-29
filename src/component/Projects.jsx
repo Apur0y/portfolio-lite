@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Projects = () => {
   const slides = [
@@ -11,6 +10,7 @@ const Projects = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   // Auto-slide logic
   useEffect(() => {
@@ -19,6 +19,11 @@ const Projects = () => {
     }, 3000); // Change slide every 3 seconds
     return () => clearInterval(interval); // Cleanup on unmount
   }, [slides.length]);
+
+  // Modal toggle handler
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
 
   return (
     <div>
@@ -47,7 +52,10 @@ const Projects = () => {
               </a>{" "}
               <FaArrowRight className="ml-2" />
             </button>
-            <button className="px-4 py-2 bg-white rounded-md shadow hover:bg-gray-300 transition-all">
+            <button
+              className="px-4 py-2 bg-white rounded-md shadow hover:bg-gray-300 transition-all"
+              onClick={toggleModal}
+            >
               Details
             </button>
           </div>
@@ -62,6 +70,28 @@ const Projects = () => {
           </p>
         </div>
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg p-6 w-10/12 max-w-md">
+            <h2 className="text-2xl font-bold mb-4">Project Details</h2>
+            <p className="mb-4">
+              Here are more details about this project. You can include
+              technologies used, challenges faced, or any additional
+              information.
+            </p>
+            <div className="flex justify-end space-x-4">
+              <button
+                className="px-4 py-2 bg-red-500 text-white rounded-md shadow hover:bg-red-600 transition-all"
+                onClick={toggleModal}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
