@@ -41,7 +41,15 @@ const Projects = () => {
 
         {/* Buttons */}
         <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <div className="flex space-x-4">
+          <div className="flex flex-col space-x-4">
+        <div>
+        <h1 className="text-4xl font-bold mb-2">Project Title</h1>
+          <p className="text-sm">
+            This is a brief description of the project. Click "Details" to learn
+            more!
+          </p>
+        </div>
+            <div className="flex flex-row gap-4">
             <button className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-md shadow hover:bg-purple-700 transition-all">
               <a
                 href="https://aquamarine-custard-8f7ba5.netlify.app/"
@@ -58,16 +66,13 @@ const Projects = () => {
             >
               Details
             </button>
+            </div>
           </div>
         </div>
 
         {/* Card Content */}
         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-transparent to-transparent p-6 text-white">
-          <h1 className="text-4xl font-bold mb-2">Project Title</h1>
-          <p className="text-sm">
-            This is a brief description of the project. Click "Details" to learn
-            more!
-          </p>
+         
         </div>
       </div>
 
