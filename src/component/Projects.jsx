@@ -41,7 +41,7 @@ const Projects = () => {
 
         {/* Buttons */}
         <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <div className="flex flex-col space-x-4">
+          <div className="flex flex-col ">
         <div className="text-white text-center my-5">
 
         <h1 className="text-4xl font-bold mb-2">Game Review</h1>
@@ -49,7 +49,7 @@ const Projects = () => {
            You can checkout different types of games. Can see the review of others and option for add review.
           </p>
         </div>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4 mx-auto">
             <button className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-md shadow hover:bg-purple-700 transition-all">
               <a
                 href="https://aquamarine-custard-8f7ba5.netlify.app/"
