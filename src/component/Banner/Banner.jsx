@@ -29,17 +29,17 @@ const Banner = () => {
           I am <br />
           <span className="text-8xl text-purple-400">Apu Roy</span>
           <br />
-          <span className="text-lg lg:text-4xl ">MERN-Stack Developer</span>
+          <span className="text-lg lg:text-7xl  ">MERN-Stack Developer</span>
         </h1>
       </section>
 
       {/* section-three */}
       <section className="flex flex-col space-y-6">
         {[
-          { icon: <FaGithub />, name: "GitHub", link: "https://github.com" },
+          { icon: <FaGithub />, name: "GitHub", link: "https://github.com/Apur0y" },
           { icon: <FaLinkedin />, name: "LinkedIn", link: "https://linkedin.com" },
           { icon: <FaFacebook />, name: "Facebook", link: "https://facebook.com" },
-          { icon: <FaEnvelope />, name: "Email", link: "mailto:apu@example.com" },
+          { icon: <FaEnvelope />, name: "Email", link: "mailto:apuroy2785@gmail.com" },
         ].map((social, index) => (
           <a
             href={social.link}

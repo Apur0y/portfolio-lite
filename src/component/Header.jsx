@@ -17,8 +17,8 @@ const Header = () => {
   const lightClass = light ? "bg-white" : "bg-gray-800 text-white"
 
   return (
-    <div className={`${lightClass} border-b-2`}>
-      <div className={`${lightClass} navbar  w-11/12 mx-auto py-5`}>
+    <div className={`${lightClass} border-b-2 sticky -top-3 z-30`}>
+      <div className={`${lightClass} navbar  w-11/12 mx-auto py-2`}>
         <div className="flex-1">
           <a className="btn btn-ghost text-2xl">Apu Roy</a>
         </div>
