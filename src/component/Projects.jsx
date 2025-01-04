@@ -33,7 +33,7 @@ const Projects = () => {
   };
 
   return (
-    <div>
+    <div id="my-projects" className="">
       <h1 className="text-2xl text-center my-7 border-b-2 pb-6 md:text-5xl font-semibold">
         Top Projects
       </h1>
@@ -101,7 +101,7 @@ const Projects = () => {
           <div className="flex flex-col ">
         <div className="text-white text-center my-5">
 
-        <h1 className="text-4xl font-bold mb-2">Volunteer Port</h1>
+        <h1 className="text-4xl font-bold mb-2 text-pink-400">Volunteer Port</h1>
           <p className="text-sm">
            Be a Volunteer or join for Volunteer. Make the world Happy.
           </p>

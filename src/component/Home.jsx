@@ -6,13 +6,17 @@ import Education from './Education';
 import About from './About';
 
 const Home = () => {
+const handletop=()=>{
+    "go to banner section"
+}
+
     return (
         <div>
             <Banner></Banner>
             <About></About>
             <Projects></Projects>
             <Education></Education>
-            <button className='btn sticky bottom-1'>Go Top</button>
+            <button onClick={()=>handletop} className='btn sticky bottom-1'>Go Top</button>
         </div>
     );
 };
