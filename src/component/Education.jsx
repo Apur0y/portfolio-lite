@@ -20,14 +20,14 @@ const Education = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-10" id="education">
+    <section className=" py-10" id="education">
       <div className="container mx-auto px-5">
-        <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 border-b-2 pb-4">Education</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {educationList.map((education, index) => (
             <div
               key={index}
-              className="bg-white p-6 shadow-md rounded-lg border border-gray-200"
+              className="bg-green-300 p-6 shadow-md rounded-lg border border-gray-200"
             >
               <h3 className="text-xl font-semibold text-gray-800">
                 {education.degree}

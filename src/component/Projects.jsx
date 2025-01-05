@@ -3,17 +3,17 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Projects = () => {
   const slides = [
-    "../../public/m5.png",
-    "../../public/m6.png",
-    "../../public/m7.png",
-    "../../public/m8.png",
+    "/m5.png",
+    "/m6.png",
+    "/m7.png",
+    "/m8.png",
   ];
 
   const volSlider =[
-    "../../public/vol1.jpg",
-    "../../public/vol2.jpg",
-    "../../public/vol3.jpg",
-  "../../public/vol4.jpg"
+    "/vol1.jpg",
+    "/vol2.jpg",
+    "/vol3.jpg",
+  "/vol4.jpg"
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -70,7 +70,7 @@ const Projects = () => {
               <FaArrowRight className="ml-2" />
             </button>
             <button
-              className="px-4 py-2 bg-white rounded-md shadow hover:bg-gray-300 transition-all"
+              className="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-300 transition-all"
               onClick={toggleModal}
             >
               Details
@@ -118,7 +118,54 @@ const Projects = () => {
               <FaArrowRight className="ml-2" />
             </button>
             <button
-              className="px-4 py-2 bg-white rounded-md shadow hover:bg-gray-300 transition-all"
+              className="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-300 transition-all"
+              onClick={toggleModal}
+            >
+              Details
+            </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Card Content */}
+        <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-transparent to-transparent p-6 text-white">
+         
+        </div>
+      </div>
+      <h1 className="w-10/12 mx-auto text-4xl font-extrabold mb-4 mt-14">3. Bistro Bytes</h1>
+
+      <div className="relative mx-auto w-10/12 h-[500px] rounded-lg shadow-lg overflow-hidden group">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center transition-all duration-500 group-hover:blur-sm group-hover:brightness-75"
+          style={{
+            backgroundImage: `url(${slides[currentIndex]})`,
+          }}
+        ></div>
+
+        {/* Buttons */}
+        <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <div className="flex flex-col ">
+        <div className="text-white text-center my-5">
+
+        <h1 className="text-4xl font-bold mb-2 text-pink-400">Volunteer Port</h1>
+          <p className="text-sm">
+           Be a Volunteer or join for Volunteer. Make the world Happy.
+          </p>
+        </div>
+            <div className="flex flex-row gap-4 mx-auto">
+            <button className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-md shadow hover:bg-purple-700 transition-all">
+              <a
+                href="https://volunteer-port.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Preview
+              </a>{" "}
+              <FaArrowRight className="ml-2" />
+            </button>
+            <button
+              className="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-300 transition-all"
               onClick={toggleModal}
             >
               Details
