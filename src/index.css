@@ -6,3 +6,9 @@
 body{
     font-family: "Sora", serif;
 }
+
+/* Add this to your global styles or App.css */
+html {
+    scroll-behavior: smooth;
+  }
+  

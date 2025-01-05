@@ -15,9 +15,15 @@ const Projects = () => {
     "/vol3.jpg",
   "/vol4.jpg"
   ]
+  const chillGamer = {
+    Name: "Chill Gamer",
+    Description:"This is the best game review side."
+  }
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [details,setDetails] = useState();
+
 
   // Auto-slide logic
   useEffect(() => {
@@ -28,8 +34,9 @@ const Projects = () => {
   }, [slides.length]);
 
   // Modal toggle handler
-  const toggleModal = () => {
+  const toggleModal = (e) => {
     setIsModalOpen(!isModalOpen);
+    setDetails(e)
   };
 
   return (
@@ -119,7 +126,7 @@ const Projects = () => {
             </button>
             <button
               className="px-4 py-2 bg-white text-black rounded-md shadow hover:bg-gray-300 transition-all"
-              onClick={toggleModal}
+              onClick={()=>toggleModal(volunteerPort)}
             >
               Details
             </button>
