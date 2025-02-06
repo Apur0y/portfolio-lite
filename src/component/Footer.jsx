@@ -18,7 +18,7 @@ const Footer = () => {
     <p>
       APU ROY
       <br />
-      MERN Stack Developer
+      Frontend Web Developer
     </p>
   </aside>
   <nav>

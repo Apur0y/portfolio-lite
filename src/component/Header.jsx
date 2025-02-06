@@ -33,7 +33,7 @@ const Header = () => {
 
         {/* Navbar Links */}
         <div className={`absolute top-14 left-0 rounded-lg shadow-md md:shadow-none md:bg-transparent md:static md:flex md:items-center transition-transform duration-300 ease-in-out ${isMenuOpen ? "block" : "hidden"}`}>
-          <ul className="flex flex-col md:flex-row md:gap-6 text-xl px-4 py-4 md:py-0 md:px-1">
+          <ul className="flex flex-col md:flex-row md:gap-12 text-xl px-4 py-4 md:py-0 md:px-1">
             <li><a href="#about" className="block py-2 md:py-0">About</a></li>
             <li><a href="#skills" className="block py-2 md:py-0">Skills</a></li>
             <li><a href="#my-projects" className="block py-2 md:py-0">Projects</a></li>
