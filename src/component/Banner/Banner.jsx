@@ -44,7 +44,7 @@ const Banner = () => {
             target="_blank"
             rel="noopener noreferrer"
             key={index}
-            className="relative group flex items-center justify-center text-4xl transition-transform duration-300 transform hover:scale-110"
+            className="relative group flex text-white items-center justify-center text-4xl transition-transform duration-300 transform hover:scale-110"
           >
             {/* Hover Bar */}
             <span className="absolute left-full bottom-0 rounded-lg h-10 w-0 bg-purple-500 text-black text-sm flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:w-40 group-hover:left-[calc(3rem)] transition-all duration-300">
@@ -60,7 +60,7 @@ const Banner = () => {
       <div className="flex flex-col-reverse lg:gap-24 md:flex-row ">
         
         {/* section-two */}
-        <section className="text-center ">
+        <section className="text-center text-gray-100">
           <h1 className="text-2xl font-semibold lg:text-8xl">
           I am <br />
             <span className="md:text-8xl text-purple-600">Apu Roy</span>

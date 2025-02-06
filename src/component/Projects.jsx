@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
 
+
 const Projects = () => {
   const slides = [
     "/m5.png",
