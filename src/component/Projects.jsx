@@ -54,7 +54,7 @@ const Projects = () => {
             <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <div className="flex flex-col text-center">
                 <h1 className="text-4xl font-bold mb-2 text-green-500">{project.name}</h1>
-                <p className="text-sm">{project.description.split(" ").slice(0, 10).join(" ") + "..."}</p>
+                <p className="text-sm">{project.description.split(" ").slice(0, 15).join(" ") + "..."}</p>
                 <div className="flex flex-row gap-4 mx-auto mt-4">
                   <button className="flex items-center px-4 py-2 bg-purple-600 text-white rounded-md shadow hover:bg-purple-700 transition-all">
                     <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
