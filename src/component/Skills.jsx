@@ -1,6 +1,7 @@
 import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGit, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiTypescript } from "react-icons/si";
+import Tilt from 'react-parallax-tilt';
 
 const Skills = () => {
   const skillCategories = {
@@ -30,13 +31,15 @@ const Skills = () => {
           <h2 className="text-2xl md:text-4xl font-bold text-center mb-6">{category}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-10/12 mx-auto">
             {skillCategories[category].map((skill, index) => (
-              <div
+            <Tilt>
+                <div
                 key={index}
                 className="flex flex-col text-white items-center bg-gradient-to-r from-black via-red-700 to-black shadow-md p-6 rounded-lg hover:shadow-lg transition-shadow duration-300"
               >
                 {skill.icon}
                 <h2 className="text-lg font-semibold mt-4">{skill.name}</h2>
               </div>
+            </Tilt>
             ))}
           </div>
         </div>

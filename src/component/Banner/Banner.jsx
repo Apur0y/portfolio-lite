@@ -8,37 +8,15 @@ const Banner = () => {
 
   const lightClass = light
     ? "bg-gray-800 text-white"
-    : "bg-gray-300 text-black";
+    : "bg-teal-800 text-black";
 
   return (
     <div
       className={`relative ${lightClass} my-12 mx-auto flex  justify-between items-center w-11/12   p-8 rounded-lg overflow-hidden`}
     >
       {/* Dotted background */}
-
-      {/* section-one */}
-      <div className="flex flex-col lg:gap-24 md:flex-row ">
-        <section className="flex flex-col items-center">
-          <img
-            src="https://i.ibb.co/phx8r1z/profile2.jpg"
-            alt="Profile"
-            className="md:h-72 md:w-72 h-64 w-64 rounded-full border-4 border-gray-700 shadow-lg"
-          />
-        </section>
-
-        {/* section-two */}
-        <section className="text-center ">
-          <h1 className="text-2xl font-semibold lg:text-8xl">
-            I am <br />
-            <span className="md:text-8xl text-purple-400">Apu Roy</span>
-            <br />
-            <span className="text-lg md:text-7xl  ">MERN-Stack Developer</span>
-          </h1>
-        </section>
-      </div>
-
-      {/* section-three */}
-      <section className="flex flex-col space-y-6">
+          {/* section-three */}
+          <section className="flex flex-col space-y-6 bg-">
         {[
           {
             icon: <FaGithub />,
@@ -69,13 +47,38 @@ const Banner = () => {
             className="relative group flex items-center justify-center text-4xl transition-transform duration-300 transform hover:scale-110"
           >
             {/* Hover Bar */}
-            <span className="absolute left-full bottom-0 rounded-lg h-10 w-0 bg-purple-500 text-black text-sm flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:w-40 group-hover:left-[calc(-10rem)] transition-all duration-300">
+            <span className="absolute left-full bottom-0 rounded-lg h-10 w-0 bg-purple-500 text-black text-sm flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:w-40 group-hover:left-[calc(3rem)] transition-all duration-300">
               {social.name}
             </span>
             {social.icon}
           </a>
         ))}
       </section>
+
+
+      {/* section-one */}
+      <div className="flex flex-col-reverse lg:gap-24 md:flex-row ">
+        
+        {/* section-two */}
+        <section className="text-center ">
+          <h1 className="text-2xl font-semibold lg:text-8xl">
+          I am <br />
+            <span className="md:text-8xl text-purple-600">Apu Roy</span>
+            <br />
+            <span className="text-lg md:text-7xl  ">Frontend Web Developer</span>
+          </h1>
+        </section>
+        <section className="flex flex-col items-center">
+          <img
+            src="https://i.ibb.co/phx8r1z/profile2.jpg"
+            alt="Profile"
+            className="md:h-72 md:w-72 h-64 w-64 rounded-full border-4 border-gray-700 shadow-lg "
+          />
+        </section>
+
+      </div>
+
+  
     </div>
   );
 };
